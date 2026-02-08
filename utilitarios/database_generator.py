@@ -696,7 +696,7 @@ class ComparativeMetrics:
         """
         Depth of Adoption Analysis: Surface vs Core adoption.
         Surface: In Keywords/Title but NOT in Abstract.
-        Core (Proxy): In Abstract. (Full definition requires BERTopic).
+        Core (Proxy): In Abstract. Recomputed after by verifying the presence in a reference BERTopic cluster
         """
         logger.info("Calculando Depth of Adoption...")
         stats = {}

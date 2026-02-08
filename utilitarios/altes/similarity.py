@@ -20,7 +20,11 @@ def calculate_cosine_distance(a: np.ndarray, b: np.ndarray) -> float:
     Returns:
         Distância cosseno (0 = idênticos, 2 = opostos)
     """
+    if np.linalg.norm(a) == 0 or np.linalg.norm(b) == 0:
+        return 1.0
+        
     return float(spatial.distance.cosine(a, b))
+
 
 
 def calculate_cosine_similarity(a: np.ndarray, b: np.ndarray) -> float:

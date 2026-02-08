@@ -46,6 +46,16 @@ except ImportError:
     sys.exit(1)
 
 
+# Configuração dos datasets
+DATASETS = {
+    'organic': 'dataset_organic.csv',
+    'policy': 'dataset_policy.csv',
+    'quality': 'dataset_quality.csv',
+    'default': 'referencias_com_topicos_ptm.csv' # Mantendo compatibilidade
+}
+
+
+
 def configurar_ambiente():
     """Configura o ambiente para análise PTM."""
     print("Configurando ambiente para análise PTM...")
@@ -296,17 +306,44 @@ class PTMTopicAnalyzer:
             return {}
 
 
-def main(auto_label: bool = False):
-    """Função principal para executar toda a análise PTM"""
+def executar_analise_ptm(dataset_name: str, dataset_filename: str, auto_label: bool = False):
+    """
+    Executa a análise PTM para um dataset específico.
+    
+    Args:
+        dataset_name: Nome identificador do dataset (organic, policy, quality)
+        dataset_filename: Nome do arquivo CSV (ex: dataset_organic.csv)
+        auto_label: Se True, aplica rotulação ALTES
+    """
     configurar_ambiente()
-    print("ANÁLISE DE TÓPICOS PRINCIPAIS - PTM")
+    print(f"\nANÁLISE DE TÓPICOS PRINCIPAIS - PTM [{dataset_name.upper()}]")
     print("="*50)
     if auto_label:
         print("Rotulação automática ALTES: ATIVADA")
 
+    # Resolver caminhos
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    projeto_root = os.path.dirname(script_dir)
+    dados_dir = os.path.join(projeto_root, 'dados')
+    
+    caminho_arquivo_entrada = os.path.join(dados_dir, dataset_filename)
+    
+    # Se for o default (referencias_sem_duplicatas), o DataLoader já sabe achar se passarmos None/default
+    # Mas aqui vamos ser explícitos se possível, ou deixar o DataLoader se virar se o arquivo não existir na raiz de dados
+    # No caso dos datasets novos, eles estão direto em dados/
+    
+    if dataset_name == 'default' and dataset_filename == 'referencias_com_topicos_ptm.csv':
+        # Default behavior anterior: carregava referencias_sem_duplicatas.csv
+        caminho_arquivo_entrada = None 
+    
     # Carregar e preprocessar dados
     data_loader = DataLoader()
-    df = data_loader.carregar_dados()
+    try:
+        df = data_loader.carregar_dados(caminho_arquivo_entrada)
+    except FileNotFoundError:
+        print(f"Arquivo não encontrado: {caminho_arquivo_entrada}")
+        return None, None
+
     df_processado = data_loader.preprocessar_dataframe(df)
 
     # Preprocessar textos
@@ -322,7 +359,9 @@ def main(auto_label: bool = False):
     )
 
     # Extrair títulos para ALTES
-    titulos = df_processado['titulo'].dropna().tolist() if 'titulo' in df_processado.columns else []
+    # Tenta 'Título' ou 'titulo'
+    coluna_titulo = 'Título' if 'Título' in df_filtrado.columns else 'titulo'
+    titulos = df_filtrado[coluna_titulo].dropna().tolist() if coluna_titulo in df_filtrado.columns else []
 
     # Analisar tópicos com PTM
     ptm_analyzer = PTMTopicAnalyzer(n_topicos=3, n_palavras=10, max_iter=100, p_pseudo_docs=1000)
@@ -341,21 +380,49 @@ def main(auto_label: bool = False):
     df_com_topicos, doc_topic_probs = ptm_analyzer.analisar_distribuicao_topicos(df_filtrado)
 
     # Salvar resultados
-    script_dir = os.path.dirname(os.path.abspath(__file__))
-    projeto_root = os.path.dirname(script_dir)
-    caminho_dados = os.path.join(projeto_root, 'dados', 'referencias_com_topicos_ptm.csv')
+    # Definir nome do arquivo de saída
+    if dataset_name == 'default':
+        nome_saida = 'referencias_com_topicos_ptm.csv'
+    else:
+        nome_saida = f'referencias_com_topicos_ptm_{dataset_name}.csv'
+        
+    caminho_saida = os.path.join(dados_dir, nome_saida)
 
     TopicAnalysisUtils.salvar_resultados(
         df_filtrado,
         df_com_topicos['topico_dominante'].tolist(),
         df_com_topicos['probabilidade_topico'].tolist(),
-        caminho_dados
+        caminho_saida
     )
 
-    print(f"\nResultados salvos em: {caminho_dados}")
-    print("Análise PTM concluída com sucesso!")
+    print(f"\nResultados salvos em: {caminho_saida}")
+    print(f"Análise PTM [{dataset_name}] concluída com sucesso!")
 
     return df_com_topicos, topicos
+
+
+def main(auto_label: bool = False, dataset_arg: str = 'default'):
+    """Função principal para executar toda a análise PTM"""
+    
+    if dataset_arg == 'all':
+        datasets_to_run = ['organic', 'policy', 'quality']
+        resultados = {}
+        for ds in datasets_to_run:
+            print(f"\n\n>>> INICIANDO PROCESSAMENTO DO DATASET: {ds.upper()} <<<")
+            df, topics = executar_analise_ptm(ds, DATASETS[ds], auto_label)
+            resultados[ds] = (df, topics)
+        return resultados, None # Retorna dict de resultados
+    else:
+        # Executar apenas um dataset
+        if dataset_arg in DATASETS:
+            filename = DATASETS[dataset_arg]
+            # Se for default, a lógica interna trata de pegar o arquivo padrão
+            return executar_analise_ptm(dataset_arg, filename, auto_label)
+        else:
+            print(f"Dataset desconhecido: {dataset_arg}")
+            print(f"Opções válidas: {list(DATASETS.keys())} ou 'all'")
+            sys.exit(1)
+
 
 
 if __name__ == "__main__":
@@ -363,5 +430,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Análise de Tópicos usando PTM")
     parser.add_argument("--auto-label", action="store_true",
                         help="Aplica rotulação automática ALTES após extração")
+    parser.add_argument("--dataset", type=str, default="default",
+                        choices=["organic", "policy", "quality", "all", "default"],
+                        help="Dataset a ser processado (default, organic, policy, quality, all)")
     args = parser.parse_args()
-    df_resultados, topicos_encontrados = main(auto_label=args.auto_label)
+    
+    # Executar
+    main(auto_label=args.auto_label, dataset_arg=args.dataset)
+
