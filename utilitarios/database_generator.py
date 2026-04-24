@@ -6,7 +6,7 @@ Database Generator for Industry 5.0 Paper Exploration
 Este módulo processa arquivos BibTeX de diferentes bases de dados acadêmicas,
 remove duplicatas e gera um arquivo CSV consolidado com todas as referências.
 
-Autor: Erika Vieira
+
 
 """
 
@@ -108,7 +108,6 @@ class BibTexProcessor:
             'sciencedirect': DatabaseNames.SCIENCE_DIRECT,
             'acm': DatabaseNames.ACM,
             'webofscience': DatabaseNames.WEB_OF_SCIENCE,
-
             'ieee': DatabaseNames.IEEE,
             'springernature': DatabaseNames.SPRINGER_NATURE
         }
@@ -206,7 +205,6 @@ class ReferenceEntry:
         self.abstract = bibtex_entry.get('abstract', '').strip()
         self.keywords = bibtex_entry.get('keywords', '')
         self.issn = bibtex_entry.get('issn', '').replace('-', '') # Normalize ISSN on entry
-
         self.affiliation = bibtex_entry.get('affiliation', bibtex_entry.get('address', ''))
         self.database = database
 
@@ -230,7 +228,6 @@ class ReferenceEntry:
             'Abstract': self.abstract,
             'Keywords': self.keywords,
             'ISSN': self.issn,
-
             'Affiliation': self.affiliation,
             'Base': self.database
         }
@@ -266,7 +263,6 @@ class CSVReferenceEntry:
         self.doi = str(entry.get('DOI', ''))
         self.abstract = str(entry.get('Abstract', '')).strip()
         self.keywords = str(entry.get('Author Keywords', entry.get('IEEE Terms', ''))).strip()
-
         self.issn = str(entry.get('ISSN', '')).replace('-', '')
         self.affiliation = str(entry.get('Affiliations', entry.get('Author Affiliations', '')))
 
@@ -280,7 +276,6 @@ class CSVReferenceEntry:
         self.doi = str(entry.get('Item DOI', ''))
         self.abstract = str(entry.get('Abstract', '')).strip()
         self.keywords = ''  # Springer Nature CSV não tem keywords
-
         self.issn = str(entry.get('Journal ISSN', '')).replace('-', '')
         self.affiliation = '' # Springer CSV typically lacks affiliation
 
@@ -304,7 +299,6 @@ class CSVReferenceEntry:
             'Abstract': self.abstract,
             'Keywords': self.keywords,
             'ISSN': self.issn,
-
             'Affiliation': self.affiliation,
             'Base': self.database
         }

@@ -6,7 +6,7 @@ Este módulo implementa análise de tópicos usando o algoritmo PTM através da 
 tomotopy. O PTM é especialmente eficaz para descobrir tópicos latentes em documentos
 usando pseudo-documentos para melhor representação dos temas.
 
-Author: Sistema de Análise de Tópicos
+
 Date: 2025-08-31
 """
 
