@@ -2849,76 +2849,6 @@ the mobile app Plant Guardian, enabling growers to identify potato skin
 blemishes directly in the field, thereby advancing both practical
 disease management and agricultural AI applications. (c) 2025 Society of
 Chemical Industry.",0,1.0
-WOS:001631531600003,"NDE 4.0: The confluence of cutting-edge nondestructive inspection
-practices, data fusion techniques, artificial intelligence, and
-cyber-physical systems for effective evaluation of materials and
-structures","Nsengiyumva, Walter and Zhong, Shuncong and Tu, Shan-Tung",2026,MECHANICAL SYSTEMS AND SIGNAL PROCESSING,10.1016/j.ymssp.2025.113626,"The fourth industrial revolution (Industry 4.0) has transformed
-manufacturing by integrating machines, materials, and human inputs
-through advanced operational and information technologies. This
-transformation has likewise reshaped nondestructive evaluation (NDE),
-giving rise to NDE 4.0. This new paradigm is enabled by key technologies
-such as Artificial Intelligence (AI), digital twins (DTs), automation,
-smart/cognitive sensors, and the Industrial Internet of Things (IIoT).
-These technologies enhance quality assurance, streamline workflows,
-enable real-time data-driven decision-making, and facilitate intelligent
-asset management. While NDE 4.0 is continuously transforming traditional
-practices, critical sectors such as aerospace, energy, and biomedical
-imaging still rely on conventional NDE methods, which struggle with
-scalability, data silos, and insufficient real-time analytics. To
-address these gaps, this paper offers a comprehensive strategic review
-and a forward-looking roadmap for advancing NDE 4.0 toward NDE 5.0. It
-synthesizes state-of-the-art developments while proposing a data-centric
-framework that integrates evolving DT technologies (from static to
-dynamic multi-tiered systems), autonomous inspection platforms, and
-hybrid data-fusion methods. Practical deployment challenges such as
-workforce skill gaps, cybersecurity, sustainability, and regulatory
-standardization, are examined alongside transformative emerging
-technologies such as terahertz sensing, quantum techniques, robotics and
-drones, augmented and virtual reality-assisted frameworks, blockchain,
-and big-data analytics. Recognizing the importance of ethical AI and
-open-science principles, this study advocates for a cohesive, globally
-standardized approach to accelerate NDE 4.0 adoption. Looking ahead,
-this work envisions NDE 5.0 as a synergistic human-machine ecosystem
-featuring self-learning, autonomous inspection systems that deliver
-enhanced reliability, safety, and efficiency across industries.","NDE 4.0; Explainable Artificial Intelligence (XAI); Industrial Internet
-of Things (IIoTs); NDE Data fusion; Cyber-Physical Systems (CPSs);
-Predictive Maintenance; Industry 4.0; Terahertz spectroscopy and Imaging
-(THz-SI)",08883270,"Zhong, SC (Corresponding Author), Fuzhou Univ, Sch Mech Engn \& Automat, Fujian Prov Key Lab Terahertz Funct Devices \& Inte, Fuzhou 350108, Peoples R China.
-Zhong, SC (Corresponding Author), Fuzhou Univ, Inst Precis Instrument \& Intelligent Measurement \&, Fuzhou 350108, Peoples R China.
-Nsengiyumva, Walter; Zhong, Shuncong, Fuzhou Univ, Sch Mech Engn \& Automat, Fujian Prov Key Lab Terahertz Funct Devices \& Inte, Fuzhou 350108, Peoples R China.
-Nsengiyumva, Walter; Zhong, Shuncong, Fuzhou Univ, Inst Precis Instrument \& Intelligent Measurement \&, Fuzhou 350108, Peoples R China.
-Tu, Shan-Tung, East China Univ Sci \& Technol, Sch Mech Engn \& Power Engn, Shanghai, Peoples R China.",Web Of Science,Q1,"NDE 4.0: The confluence of cutting-edge nondestructive inspection
-practices, data fusion techniques, artificial intelligence, and
-cyber-physical systems for effective evaluation of materials and
-structures The fourth industrial revolution (Industry 4.0) has transformed
-manufacturing by integrating machines, materials, and human inputs
-through advanced operational and information technologies. This
-transformation has likewise reshaped nondestructive evaluation (NDE),
-giving rise to NDE 4.0. This new paradigm is enabled by key technologies
-such as Artificial Intelligence (AI), digital twins (DTs), automation,
-smart/cognitive sensors, and the Industrial Internet of Things (IIoT).
-These technologies enhance quality assurance, streamline workflows,
-enable real-time data-driven decision-making, and facilitate intelligent
-asset management. While NDE 4.0 is continuously transforming traditional
-practices, critical sectors such as aerospace, energy, and biomedical
-imaging still rely on conventional NDE methods, which struggle with
-scalability, data silos, and insufficient real-time analytics. To
-address these gaps, this paper offers a comprehensive strategic review
-and a forward-looking roadmap for advancing NDE 4.0 toward NDE 5.0. It
-synthesizes state-of-the-art developments while proposing a data-centric
-framework that integrates evolving DT technologies (from static to
-dynamic multi-tiered systems), autonomous inspection platforms, and
-hybrid data-fusion methods. Practical deployment challenges such as
-workforce skill gaps, cybersecurity, sustainability, and regulatory
-standardization, are examined alongside transformative emerging
-technologies such as terahertz sensing, quantum techniques, robotics and
-drones, augmented and virtual reality-assisted frameworks, blockchain,
-and big-data analytics. Recognizing the importance of ethical AI and
-open-science principles, this study advocates for a cohesive, globally
-standardized approach to accelerate NDE 4.0 adoption. Looking ahead,
-this work envisions NDE 5.0 as a synergistic human-machine ecosystem
-featuring self-learning, autonomous inspection systems that deliver
-enhanced reliability, safety, and efficiency across industries.",3,1.0
 WOS:001619893100001,"How information systems can support labor flexibility implementation:
 enhanced information architecture framework for industry 5.0","Costa, Federica and Ahmadi, Alireza and Cantini, Alessandra and
 Portioli-Staudacher, Alberto",2025,FLEXIBLE SERVICES AND MANUFACTURING JOURNAL,10.1007/s10696-025-09642-5,"In Industry 5.0, where human-centricity, resilience, and customization
@@ -3083,62 +3013,6 @@ human-machine interaction and ensuring user-centered solutions. The
 industrial case study demonstrates the potential benefits of the
 proposed toolkit to optimize machine design according to I5.0
 principles, improving both safety and usability.",3,1.0
-WOS:001622217800001,"Meat Industry 5.0-a review of technological approaches and robotic
-systems in the meat processing industry","Andre-Zarna, Chiara and Simmen, Katharina and Albretsen, Karl Helge and
-Berg, Per and Njaastad, Eirik B.",2026,TRENDS IN FOOD SCIENCE \& TECHNOLOGY,10.1016/j.tifs.2025.105439,"Background: The meat processing industry is experiencing a significant
-technological transformation, with automation and robotisation
-increasingly complementing traditional manual labour. Advances in
-artificial intelligence (AI), robotics, and human-robot
-collaboration-core elements of Industry 5.0-are central to this shift.
-These technologies are being adopted to address persistent labour
-shortages, amplified by events such as the COVID-19 pandemic, and to
-meet growing demands for safer, more sustainable, and resilient food
-production systems. Scope and approach: Despite ongoing progress, a
-consolidated overview of automation technology in secondary meat
-processing, particularly in the context of Industry 5.0, is lacking.
-This review addresses this gap by examining recent technological
-developments, identifying current industry needs, and outlining key
-research challenges. The focus is on the secondary processing of the
-world's most consumed meats by volume: poultry, pork, beef, and veal.
-Key findings and conclusion: Emerging technologies show strong potential
-to enhance productivity, food safety, and working conditions. However,
-major barriers to adoption remain, including high integration costs,
-strict food safety compliance requirement, and the need for flexible
-systems that can accommodate variability in raw materials. Automation
-levels vary significantly between meat types, generally decreasing with
-animal size. The review emphasises the need for adaptable, modular
-automation solutions that support gradual integration into existing
-operations. Addressing critical challenges, including labour shortages,
-hygienic processing, and environmental sustainability, will be key to
-ensuring a more robust and future-ready meat processing industry.",Meat processing; Automation; Industry 5.0; Human-robot collaboration,09242244,"André-Zarna, C (Corresponding Author), SINTEF Ind, Dept Prod Technol, POB 4766 Torgarden, NO-7465 Trondheim, Norway.
-Andre-Zarna, Chiara; Simmen, Katharina; Njaastad, Eirik B., SINTEF Ind, Dept Prod Technol, POB 4766 Torgarden, NO-7465 Trondheim, Norway.
-Albretsen, Karl Helge; Berg, Per, Nortura SA, POB 360 Okern, NO-0513 Oslo, Norway.",Web Of Science,Q1,"Meat Industry 5.0-a review of technological approaches and robotic
-systems in the meat processing industry Background: The meat processing industry is experiencing a significant
-technological transformation, with automation and robotisation
-increasingly complementing traditional manual labour. Advances in
-artificial intelligence (AI), robotics, and human-robot
-collaboration-core elements of Industry 5.0-are central to this shift.
-These technologies are being adopted to address persistent labour
-shortages, amplified by events such as the COVID-19 pandemic, and to
-meet growing demands for safer, more sustainable, and resilient food
-production systems. Scope and approach: Despite ongoing progress, a
-consolidated overview of automation technology in secondary meat
-processing, particularly in the context of Industry 5.0, is lacking.
-This review addresses this gap by examining recent technological
-developments, identifying current industry needs, and outlining key
-research challenges. The focus is on the secondary processing of the
-world's most consumed meats by volume: poultry, pork, beef, and veal.
-Key findings and conclusion: Emerging technologies show strong potential
-to enhance productivity, food safety, and working conditions. However,
-major barriers to adoption remain, including high integration costs,
-strict food safety compliance requirement, and the need for flexible
-systems that can accommodate variability in raw materials. Automation
-levels vary significantly between meat types, generally decreasing with
-animal size. The review emphasises the need for adaptable, modular
-automation solutions that support gradual integration into existing
-operations. Addressing critical challenges, including labour shortages,
-hygienic processing, and environmental sustainability, will be key to
-ensuring a more robust and future-ready meat processing industry.",0,1.0
 WOS:001609510400001,"Digital Futures, Sustainable Outcomes: Mapping the Impact of Digital
 Transformation on EU SDG Progress","Fonseca, Luis and Domingues, Jose Pedro and Lima, Vanda and Dima, Alina
 Mihaela and Busu, Mihail",2025,SUSTAINABLE DEVELOPMENT,10.1002/sd.70394,"This study explores how digital transformation, measured by the Global
@@ -3618,56 +3492,6 @@ manufacturing environments. To support effective implementation, future
 studies should be conducted in real-world settings using standardized
 assessment instruments, physiological measures, and qualitative
 interviews.",3,1.0
-WOS:001567845500001,"Exploring tasks and challenges in human-robot collaborative systems: A
-review","Asif, Seemal and Callari, Tiziana C. and Khan, Fahad and Eimontaite,
-Iveta and Hubbard, Ella-Mae and Bahraini, Masoud S. and Webb, Phil and
-Lohse, Niels",2026,ROBOTICS AND COMPUTER-INTEGRATED MANUFACTURING,10.1016/j.rcim.2025.103102,"This paper presents an in-depth exploration of Human-Robot Collaborative
-Systems (HRCSs) within industrial environments, a dynamic field that has
-witnessed significant advancements due to technological innovation and
-the increasing integration of Artificial Intelligence (AI). As
-industries evolve towards more collaborative and adaptive manufacturing
-systems, the dynamic interaction between humans and robots becomes
-pivotal. This study reviews the current state of HRCSs, focusing on the
-challenges of task allocation and skill alignment, safety, trust, and
-the psychological wellbeing of human workers. We review control
-strategies and architectural frameworks that underpin effective
-human-robot interactions (HRI), emphasising the critical role of AI in
-enhancing decision-making processes and the adaptability of
-collaborative efforts. Our review sheds light on the complexities
-involved in designing HRCSs that are not only efficient but also
-cognisant of the human experience, advocating for a balanced approach
-that leverages the strengths of both human and robotic counterparts. We
-argue that research in and implications of HRCSs should extend beyond
-technical considerations, touching on ethical, social, and
-organisational dimensions, thereby contributing to the broader discourse
-on the future of work in the era of Industry 4.0 and future Industry
-5.0.","Human-robot collaboration; Human factors; Task allocation; Collaborative
-robots trust; HRC Psychological wellbeing; HRCSs Control strategies; HRC
-Architecture; HRC Application; Technology in HRCSs; Robot safety",07365845,"Asif, S (Corresponding Author), Cranfield Univ, Fac Engn \& Appl Sci, Ctr Robot \& Assembly, Cranfield, England.
-Asif, Seemal; Khan, Fahad; Eimontaite, Iveta; Webb, Phil, Cranfield Univ, Fac Engn \& Appl Sci, Ctr Robot \& Assembly, Cranfield, England.
-Callari, Tiziana C.; Bahraini, Masoud S.; Lohse, Niels, Univ Birmingham, Coll Engn \& Phys Sci, Sch Engn, Dept Mech Engn, Birmingham, England.
-Hubbard, Ella-Mae; Lohse, Niels, Loughborough Univ, Intelligent Automat Ctr, Wolfson Sch Mech Elect \& Mfg Engn, Loughborough, England.",Web Of Science,Q1,"Exploring tasks and challenges in human-robot collaborative systems: A
-review This paper presents an in-depth exploration of Human-Robot Collaborative
-Systems (HRCSs) within industrial environments, a dynamic field that has
-witnessed significant advancements due to technological innovation and
-the increasing integration of Artificial Intelligence (AI). As
-industries evolve towards more collaborative and adaptive manufacturing
-systems, the dynamic interaction between humans and robots becomes
-pivotal. This study reviews the current state of HRCSs, focusing on the
-challenges of task allocation and skill alignment, safety, trust, and
-the psychological wellbeing of human workers. We review control
-strategies and architectural frameworks that underpin effective
-human-robot interactions (HRI), emphasising the critical role of AI in
-enhancing decision-making processes and the adaptability of
-collaborative efforts. Our review sheds light on the complexities
-involved in designing HRCSs that are not only efficient but also
-cognisant of the human experience, advocating for a balanced approach
-that leverages the strengths of both human and robotic counterparts. We
-argue that research in and implications of HRCSs should extend beyond
-technical considerations, touching on ethical, social, and
-organisational dimensions, thereby contributing to the broader discourse
-on the future of work in the era of Industry 4.0 and future Industry
-5.0.",3,1.0
 WOS:001556535600001,"Addressing the challenges associated with Industry 5.0 in higher
 education: a training concept approach","Lopez, Ane Arregi and Igartua, Juan Ignacio and Retegi, Jabier and
 Eguren, Jose Alberto and Ibarra, Dorleta",2025,TQM JOURNAL,10.1108/TQM-12-2024-0524,"Purpose-The purpose of this study is to demonstrate the potential of a
@@ -5455,62 +5279,6 @@ fostering informed decision-making toward a carbon-neutral future.
 Originality/value - This review serves as a call to action, urging
 collective efforts to harness innovation for the betterment of industry
 and the environment.",0,1.0
-WOS:001620511600002,"HealthCare 5.0: An industry 5.0 perspective for next-generation medical
-systems with synergistic integration of IoT, AI, and 6G","Younesi, Abolfazl and Oustad, Elyas and Ansari, Mohsen and Fahringer,
-Thomas and Buyya, Rajkumar",2026,INTERNET OF THINGS,10.1016/j.iot.2025.101815,"The rising demand for personalized, reliable, and sustainable health
-services requires a significant shift beyond current technology
-barriers. This paper introduces HealthCare 5.0, a transformative vision
-for next-generation medical systems. It brings the Internet of Things
-(IoT), Artificial Intelligence (AI), and 6G communications together
-under the human-centered, sustainable, and resilient principles of
-Industry 5.0. HealthCare 5.0 showcases the convergence of IoT for
-continuous health monitoring, AI for intelligent reasoning, and 6G for
-dependable, low-latency connectivity. These elements work together to
-provide real-time, personalized, and proactive care. The analysis looks
-into how this collaboration supports advancements like remote
-diagnostics, digital twins, federated learning, explainable AI (XAI),
-and medical large language models (MedLLMs). It also addresses
-challenges in interoperability, energy efficiency, data privacy, and
-ethical AI. The framework stresses the importance of digital twins,
-ambient sensing, and wearable devices in facilitating predictive and
-patient-centered care. Despite progress, there are still gaps in
-standardization, clinician adoption, and the ethical use of these
-technologies. To overcome these issues, we propose a complete approach
-that combines IoT, AI, and 6G based on Industry 5.0 principles. This
-closed-loop model of ``sense, transmit, reason, act{''} is backed by key
-performance indicators, real-world case studies, and a roadmap for
-compliance and regulatory support. By merging innovation with human
-values and systemic resilience, HealthCare 5.0 offers a forward-thinking
-plan for smart, safe, and fair healthcare systems.","HealthCare 5.0; Internet of things; Artificial intelligence; 6G
-communication; Industry 5.0; Medical large language models (MedLLMs)",25431536,"Younesi, A (Corresponding Author), Univ Innsbruck, Dept Comp Sci, Technikerstr 21a, A-6020 Innsbruck, Austria.
-Younesi, Abolfazl, Univ Innsbruck, Dept Comp Sci, Technikerstr 21a, A-6020 Innsbruck, Austria.
-Oustad, Elyas; Ansari, Mohsen; Fahringer, Thomas, Sharif Univ Technol, Dept Comp Engn, Azadi Ave, Tehran 111559517, Iran.
-Buyya, Rajkumar, Univ Melbourne, Sch Comp \& Informat Syst, Cloud Comp \& Distributed Syst CLOUDS Lab, Melbourne, Vic 3010, Australia.",Web Of Science,Q1,"HealthCare 5.0: An industry 5.0 perspective for next-generation medical
-systems with synergistic integration of IoT, AI, and 6G The rising demand for personalized, reliable, and sustainable health
-services requires a significant shift beyond current technology
-barriers. This paper introduces HealthCare 5.0, a transformative vision
-for next-generation medical systems. It brings the Internet of Things
-(IoT), Artificial Intelligence (AI), and 6G communications together
-under the human-centered, sustainable, and resilient principles of
-Industry 5.0. HealthCare 5.0 showcases the convergence of IoT for
-continuous health monitoring, AI for intelligent reasoning, and 6G for
-dependable, low-latency connectivity. These elements work together to
-provide real-time, personalized, and proactive care. The analysis looks
-into how this collaboration supports advancements like remote
-diagnostics, digital twins, federated learning, explainable AI (XAI),
-and medical large language models (MedLLMs). It also addresses
-challenges in interoperability, energy efficiency, data privacy, and
-ethical AI. The framework stresses the importance of digital twins,
-ambient sensing, and wearable devices in facilitating predictive and
-patient-centered care. Despite progress, there are still gaps in
-standardization, clinician adoption, and the ethical use of these
-technologies. To overcome these issues, we propose a complete approach
-that combines IoT, AI, and 6G based on Industry 5.0 principles. This
-closed-loop model of ``sense, transmit, reason, act{''} is backed by key
-performance indicators, real-world case studies, and a roadmap for
-compliance and regulatory support. By merging innovation with human
-values and systemic resilience, HealthCare 5.0 offers a forward-thinking
-plan for smart, safe, and fair healthcare systems.",2,1.0
 WOS:001411599300001,"A systematic literature review on digital literacy, employability, and
 innovative work behavior: emphasizing the contextual approaches in HRM
 research","Caroline, Angela and Coun, Martine J. H. and Gunawan, Agus and Stoffers,

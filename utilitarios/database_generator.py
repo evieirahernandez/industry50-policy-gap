@@ -42,6 +42,7 @@ class DatabaseNames:
     OTHER = 'Outra'
 
 MIN_YEAR = 2021
+MAX_YEAR = 2025
 
 
 class BibTexProcessor:
@@ -309,13 +310,14 @@ class YearFilter:
     """Classe responsável por filtrar referências por ano."""
 
     @staticmethod
-    def filter_dataframe(df: pd.DataFrame, min_year: int) -> pd.DataFrame:
+    def filter_dataframe(df: pd.DataFrame, min_year: int, max_year: Optional[int] = None) -> pd.DataFrame:
         """
-        Filtra DataFrame por ano mínimo.
+        Filtra DataFrame por ano mínimo e máximo.
 
         Args:
             df: DataFrame com as referências
             min_year: Ano mínimo (inclusivo)
+            max_year: Ano máximo (inclusivo, opcional)
 
         Returns:
             DataFrame filtrado
@@ -325,8 +327,15 @@ class YearFilter:
         # Converte coluna Ano para numérico, forçando erros a NaN
         df['Ano_Num'] = pd.to_numeric(df['Ano'], errors='coerce')
         
-        # Filtra anos válidos e maiores ou iguais ao min_year
-        df_filtered = df[df['Ano_Num'] >= min_year].copy()
+        # Filtra anos válidos dentro do intervalo
+        if max_year is not None:
+            mask = (df['Ano_Num'] >= min_year) & (df['Ano_Num'] <= max_year)
+            filtro_msg = f"{min_year} <= Ano <= {max_year}"
+        else:
+            mask = df['Ano_Num'] >= min_year
+            filtro_msg = f">= {min_year}"
+
+        df_filtered = df[mask].copy()
         
         # Remove coluna auxiliar
         df_filtered.drop(columns=['Ano_Num'], inplace=True)
@@ -334,7 +343,7 @@ class YearFilter:
         filtered_count = len(df_filtered)
         removed_count = original_count - filtered_count
         
-        logger.info(f"Filtro de ano (>= {min_year}) aplicado: {filtered_count} mantidos, {removed_count} removidos")
+        logger.info(f"Filtro de ano ({filtro_msg}) aplicado: {filtered_count} mantidos, {removed_count} removidos")
         
         return df_filtered
 
@@ -886,7 +895,7 @@ class DatabaseGenerator:
             logger.info(f"Total inicial de referências: {len(df_complete)}")
 
             # --- YEAR FILTER ---
-            df_complete = self.year_filter.filter_dataframe(df_complete, MIN_YEAR)
+            df_complete = self.year_filter.filter_dataframe(df_complete, MIN_YEAR, MAX_YEAR)
 
             # Remove duplicatas
             df_final = self.duplicate_remover.remove_duplicates_dataframe(df_complete, keep='first')
